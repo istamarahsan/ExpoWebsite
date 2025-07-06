@@ -799,16 +799,18 @@ export default function Home() {
                                             variant="small"
                                             className="text-center text-gray-200"
                                         >
-                                            ndak tau kok tanya saya
+                                            GOR Alam Sutera (#35)
                                         </Typography>
                                     </div>
-                                    <Image
+                                    <Carousel className="my-4 w-full">
+                                        <Image
                                             className="h-full w-full rounded-xl object-scale-down object-center shadow-xl"
-                                            src="/watesiggma.jpg"
+                                            src={"/position-as-m.webp"}
                                             alt={"position of BGDC in alam sutera expo"}
                                             width={1267}
                                             height={631}
-                                    />
+                                        />
+                                    </Carousel>
                                 </TabPanel>
                             </TabsBody>
                         </Tabs>
