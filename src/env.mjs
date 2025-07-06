@@ -14,8 +14,8 @@ export const env = createEnv({
         ),
         DISCORD_CLIENT_ID: z.string().nonempty(),
         DISCORD_CLIENT_SECRET: z.string().nonempty(),
-        GSHEETS_JSON_KEY_64: z.string().nonempty(),
-        TARGET_SPREADSHEET_ID: z.string().nonempty(),
+        GSHEETS_JSON_KEY_64: z.string().optional(),
+        TARGET_SPREADSHEET_ID: z.string().optional(),
     },
 
     client: {},

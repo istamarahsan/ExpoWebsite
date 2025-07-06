@@ -14,6 +14,10 @@ export const reregistrationRouter = createTRPCRouter({
             })
         )
         .mutation(async ({ input }) => {
+            if (!env.GSHEETS_JSON_KEY_64 || !env.TARGET_SPREADSHEET_ID) {
+                return true
+            }
+
             const parseCreds = z
                 .object({
                     project_id: z.string().nonempty(),
